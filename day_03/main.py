@@ -4,7 +4,7 @@ input_file = "input.txt"
 
 def get_input(filename: str) -> str:
     with open(filename) as f:
-        return  f.read()
+        return f.read()
 
 
 get_prioritie_of_char = lambda c: ascii_letters.index(c)+1
@@ -20,7 +20,7 @@ def part1():
         common = first.intersection(second)
         total_prioritie += get_prioritie_of_char(common.pop())
 
-    print(total_prioritie) # 8394
+    return total_prioritie
     
 
 def part2():
@@ -32,12 +32,12 @@ def part2():
         badge = g[0].intersection(g[1].intersection(g[2]))
         total_prioritie += get_prioritie_of_char(badge.pop())
         
-    print(total_prioritie) # 2413
+    return total_prioritie
 
 
 def main():
-    part1()
-    part2()
+    print(part1()) # 8394
+    print(part2()) # 2413
 
         
 if __name__ == "__main__":

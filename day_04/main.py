@@ -2,7 +2,7 @@ input_file = "input.txt"
 
 def get_input(filename: str) -> str:
     with open(filename) as f:
-        return  f.read()
+        return f.read()
 
 
 def create_sets_from_pairs(pairs: list) -> list:
@@ -29,7 +29,7 @@ def part1():
         except StopIteration:
             break
     
-    print(contains_other) # 538
+    return contains_other
     
 
 def part2():
@@ -45,12 +45,12 @@ def part2():
         except StopIteration:
             break
         
-    print(overlaps) # 792
+    return overlaps
 
 
 def main():
-    part1()
-    part2()
+    print(part1()) # 538
+    print(part2()) # 792
 
         
 if __name__ == "__main__":

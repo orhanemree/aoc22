@@ -40,7 +40,7 @@ def part1():
     for i in range((len(crates[0])+1)//4):
         message += stack[str(i+1)][-1]
         
-    print(message) # WCZTHTMPS
+    return message
 
 
 def part2():
@@ -66,12 +66,12 @@ def part2():
     for i in range((len(crates[0])+1)//4):
         message += stack[str(i+1)][-1]
         
-    print(message) # BLSGJSDTS
+    return message
 
 
 def main():
-    part1()
-    part2()
+    print(part1()) # WCZTHTMPS
+    print(part2()) # BLSGJSDTS
 
         
 if __name__ == "__main__":

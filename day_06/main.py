@@ -20,19 +20,19 @@ def part1():
     inp = get_input(input_file)
     start_of_packet = detect_nth_distinct(inp, 4)
     
-    print(start_of_packet) # 1640
+    return start_of_packet
 
 
 def part2():
     inp = get_input(input_file)
     start_of_message = detect_nth_distinct(inp, 14)
     
-    print(start_of_message) # 3613
+    return start_of_message
 
 
 def main():
-    part1()
-    part2()
+    print(part1()) # 1640
+    print(part2()) # 3613
 
         
 if __name__ == "__main__":

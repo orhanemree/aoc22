@@ -1,1 +1,8 @@
+# ignore extension-less files
+*
+!*/
+!*.*
+
+# standard ignore
 *-ignore.*
+*.c

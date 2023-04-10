@@ -4,7 +4,7 @@ input_file = "input.txt"
 
 def get_input(filename: str) -> str:
     with open(filename) as f:
-        return  f.read()
+        return f.read()
 
 
 def calculate_point(opp: str, us: str) -> int:
@@ -46,7 +46,7 @@ def part1():
         opp, us = r.split(" ")
         total_point += calculate_point(opp, us)
         
-    print(total_point) # 12645
+    return total_point
 
 
 def part2():
@@ -84,12 +84,12 @@ def part2():
 
         total_point += calculate_point(opp, us)
         
-    print(total_point) # 11756
+    return total_point
         
 
 def main():
-    part1()
-    part2()
+    print(part1()) # 12645
+    print(part2()) # 11756
 
         
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ input_file = "input.txt"
 
 def get_input(filename: str) -> str:
     with open(filename) as f:
-        return  f.read()
+        return f.read()
 
 
 def calculate_sum_of_calories(inventory: str) -> int:
@@ -12,22 +12,24 @@ def calculate_sum_of_calories(inventory: str) -> int:
 
 
 def part1():
-    input = get_input(input_file)
-    top_calorie = max(calculate_sum_of_calories(input))
-    print(top_calorie) # 66186
+    input_ = get_input(input_file)
+    top_calorie = max(calculate_sum_of_calories(input_))
+    
+    return top_calorie
 
 
 def part2():
-    input = get_input(input_file)
-    calories = calculate_sum_of_calories(input)
+    input_ = get_input(input_file)
+    calories = calculate_sum_of_calories(input_)
     calories.sort()
     top_three = calories[-1] + calories[-2] + calories[-3]
-    print(top_three) # 196804
+    
+    return top_three
 
 
 def main():
-    part1()
-    part2()
+    print(part1()) # 66186
+    print(part2()) # 196804
 
         
 if __name__ == "__main__":
