@@ -1,4 +1,4 @@
-## AoC22 🎠
+# 🎠 AoC22 
 My solutions to Advent of Code 2022.
 
 ## Completed
